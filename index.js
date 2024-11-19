@@ -5,3 +5,10 @@
 let arr1=["kumar","mahesh","vinay"]
 let y=arr1.map(b=>b.toUpperCase())
 console.log(y);//[ 'KUMAR', 'MAHESH', 'VINAY' ]
+
+
+let arr2=["kumar","mahesh","vinay"]
+let z=arr2.map((c)=>{
+    return c.slice(0,-1)+c.at(-1).toUpperCase()
+})
+console.log(z);//[ 'kumaR', 'mahesH', 'vinaY' ]
